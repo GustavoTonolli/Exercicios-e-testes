@@ -1,0 +1,184 @@
+body {
+  background-color: #f7f7f7;
+  font-family: "Open Sans", sans-serif;
+}
+
+.stripped section:nth-child(3) {
+  background-color: #b3b3b3;
+}
+
+/*
+:root {
+    VARIAVEIS no CSS --
+--secondary: #102542ff; -oxford-blue
+--bittersweet: #f87060ff; -bitterswee
+--light-gray: #cdd7d6ff; -light-gray
+--primary: #b3a394ff; -grullo
+--white: #ffffffff; -WHITE
+} */
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/snowboarding.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  background-color: rgba(45, 136, 206, 0.6);
+  text-align: center;
+  width: 100%;
+  padding: 3% 0;
+}
+.hero-title h1 {
+  color: #ffffffff;
+}
+.hero-title p {
+  color: #3f484e;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.why-content h2 {
+  margin-top: 20vh;
+  padding: 3vh;
+  text-align: center;
+  color: #686666;
+  background-color: rgba(128, 128, 128, 0.4);
+}
+.why-content .cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20vh 15vw;
+}
+.why-content .card {
+  width: 400px;
+  height: 300px;
+  background-color: #102542ff;
+  text-align: center;
+  position: relative;
+  margin: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.why-content .card img {
+  width: 400px;
+  height: 300px;
+}
+.why-content .card-footer {
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.7);
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.about-content .about-container {
+  display: flex;
+  justify-content: center;
+}
+.about-content h2 {
+  text-align: center;
+  padding: 3vh;
+  color: #ffffff;
+  background-color: rgba(119, 118, 118, 0.4);
+}
+.about-content .about {
+  width: 50vh;
+  text-align: center;
+  margin: 5vh 0;
+  padding: 10vh;
+}
+.about-content h3 {
+  padding-bottom: 15px;
+  color: #686666;
+}
+.about-content p {
+  padding: 15px;
+  color: #686666;
+  font-size: 1.2em;
+}
+
+.contact-content .contact-container {
+  background-color: #f7f7f7;
+}
+.contact-content form {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 25vw 15vh 25vw;
+  align-items: center;
+}
+.contact-content h2 {
+  margin-top: 15vh;
+  text-align: center;
+  font-size: 2em;
+  padding: 3vh;
+  color: #686666;
+  background-color: rgba(128, 128, 128, 0.4);
+}
+.contact-content textarea {
+  width: 45vw;
+  height: 40vh;
+  margin: 5px;
+  border-radius: 8px;
+}
+.contact-content button {
+  width: 10vw;
+  margin: 5vh;
+  border-radius: 8px;
+  background-color: #2d88ce;
+  color: white;
+}
+.contact-content input {
+  margin: 5px;
+  width: 45vw;
+  border-radius: 8px;
+}
+
+.content-footer {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-footer .card-footer {
+  background-color: black;
+  height: 10vh;
+}
+.content-footer p {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding-top: 30px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+/*# sourceMappingURL=global.css.map */

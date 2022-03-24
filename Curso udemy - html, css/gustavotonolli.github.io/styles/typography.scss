@@ -1,0 +1,12 @@
+@for $i from 1 to 6 {
+    $step: 0.25;
+    $initial: 1;
+    $extra: ((6-$i) * $step);
+
+    h#{$i} {
+        font-size: #{$initial + $extra}em;
+    }
+}
+
+
+// font-size: #{((6 - $i) * $step) + $initial}em;

@@ -1,0 +1,25 @@
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0, 0.2)), url('/snowboarding.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.hero-title {
+    background-color: adjust-color($color: #2d88ce,  $alpha: -0.4) ;
+    text-align: center;
+    width: 100%;
+    padding: 3% 0;
+
+    h1 {
+        color: $white-sass;
+    }
+
+    p {
+        color: #3f484e;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+}

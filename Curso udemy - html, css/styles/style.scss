@@ -1,0 +1,27 @@
+
+$primary-sass:#102542ff;
+$secondary-sass: #dbac38;
+$light-gray-sass: #cdd7d6ff;
+$grullo-sass: #b3a394ff;
+$white-sass: #ffffffff;
+$escrita-sass: gray;
+
+body {
+    background-color: darken($color: white, $amount: 3%);
+    font-family: 'Open Sans', sans-serif;
+}
+.stripped section:nth-child(3) {
+    background-color: adjust-color($color: rgb(179, 179, 179),  $alpha: 1);
+
+}
+
+/*
+:root {
+    VARIAVEIS no CSS --
+--secondary: #102542ff; -oxford-blue
+--bittersweet: #f87060ff; -bitterswee
+--light-gray: #cdd7d6ff; -light-gray
+--primary: #b3a394ff; -grullo
+--white: #ffffffff; -WHITE
+} */
+

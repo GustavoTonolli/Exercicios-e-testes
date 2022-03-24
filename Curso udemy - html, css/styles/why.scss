@@ -1,0 +1,41 @@
+.why-content {
+    h2 {
+        margin-top: 20vh;
+        padding: 3vh;
+        text-align: center;
+        color: #686666;
+        background-color: adjust-color($color: gray,  $alpha: -0.6);
+    }
+    .cards-container {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20vh 15vw;
+    }
+    .card {
+        
+        width: 400px;
+        height: 300px;
+        background-color: $primary-sass;
+        text-align: center;  
+        position: relative;
+        margin: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;     
+    }
+    .card img {
+        width: 400px;
+        height: 300px;
+    }
+    
+    .card-footer {
+        width: 100%;
+        background-color: adjust-color($color: gray,  $alpha: -0.3);
+        position: absolute;
+        bottom: 0;
+        color: white;
+        font-size: 1.25em;
+        font-weight: bold;
+        
+    }
+}

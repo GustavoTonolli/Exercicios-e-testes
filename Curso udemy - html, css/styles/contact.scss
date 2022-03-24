@@ -1,0 +1,41 @@
+.contact-content {
+    .contact-container {
+        background-color: darken($color: white, $amount: 3%);
+
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 5vh 25vw 15vh 25vw;
+        align-items: center;
+        
+    }
+    h2 {
+        margin-top: 15vh;
+        text-align: center;
+        font-size: 2em;
+        padding: 3vh;
+        color: #686666;
+        background-color: adjust-color($color: gray,  $alpha: -0.6)
+    }
+    textarea {
+        width: 45vw;
+        height: 40vh;
+        margin: 5px;
+        border-radius: 8px;
+    }
+    button {
+        width: 10vw;
+        margin: 5vh; 
+        border-radius: 8px; 
+        background-color: #2d88ce;
+        color: white;
+    }
+    input {
+        margin: 5px;
+        width: 45vw;
+        border-radius: 8px;
+        
+    }
+
+}

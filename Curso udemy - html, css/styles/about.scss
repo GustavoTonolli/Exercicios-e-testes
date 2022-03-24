@@ -1,0 +1,34 @@
+.about-content {
+
+    .about-container {
+        
+        display: flex;
+        justify-content: center;
+    }
+    h2 {
+        text-align: center;
+        padding: 3vh;
+        color: #ffffff;
+        background-color: adjust-color($color: rgb(119, 118, 118),  $alpha: -0.6);
+    }
+    .about {
+        
+        width: 50vh;
+        text-align: center;
+        margin: 5vh 0;
+        padding: 10vh;
+        
+        
+    }
+    h3 {
+        padding-bottom: 15px;
+        color: #686666;
+    }
+    p {
+        
+        padding: 15px;
+        color:#686666;
+        font-size: 1.2em;
+
+    }
+}
