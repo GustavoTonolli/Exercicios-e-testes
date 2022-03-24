@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+header {
+    background-color: #5E299A;
+    height: 150px;
+    width: 100%;
+    
+}
+header .header-black{
+    background-color: #000;
+    height: 40px;
+    width: 100%;
+    
+}
+header .container {
+    position: relative;
+  
+    
+    
+}
+header #logotipo {
+    position: absolute;
+    top: -20px;
+    margin-left: 20vh;
+    
+}
+.header-black .container {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 60px;
+    padding-top: 4px;
+}
+header #times {
+    
+    
+    
+}

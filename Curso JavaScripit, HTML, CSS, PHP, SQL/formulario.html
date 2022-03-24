@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="form.php">
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu@email.com" required>
+        </div>
+        <div class="form-group">
+            <label for="nascimento">Nascimento</label>
+            <input type="date" name="nascimento" id="nascimento" class="form-control" placeholder="Data de nascimento" required min="2006-01-01" max="2022-03-20">
+        </div>
+        <div class="form-group">
+            <label>Sexo</label>
+            <input type="radio" name="sexo" id="masculino" class="radio" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="feminino" class="radio" required>
+            <label for="sexo">Feminino</label>
+        </div>
+        <div class="form-group">
+            <label for="li">Li e aceito</label>
+            <input type="checkbox" name="li" id="li" required checked>
+        </div>
+        <div class="form-group">
+            <label for="volume">Volume</label>
+            <input type="range" name="volume" id="volume" required checked>
+        </div>
+        <div class="form-group">
+            <label for="meter">Bateria</label>
+            <meter min="0" max="100" low="25" value="15">50</meter>
+        </div>
+        <div class="form-group">
+            <label for="carregando">Carregando</label>
+            <progress min="0" max="100" value="60">60%</progress>
+        </div>
+        <div class="form-group">
+            <label for="ano">Ano de fabricação</label>
+            <input type="number" name="ano" id="ano" min="2012" class="form-control">
+        </div>
+        <div>
+            <button class="btn btn-primary" type="submit">Cadastrar</button>
+        </div>
+    </form>
+  
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
