@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha!</title>
+    <style>
+        div#mae {
+            display: flex;
+            justify-content: left;
+            position: relative;
+        }
+        div#col1 {
+            background-color: black;
+            width: 20px;
+            height: 500px;
+            margin-left: 150px;
+           
+            
+        }
+        div#col2 {
+            background-color: black;
+            width: 20px;
+            height: 500px;
+            margin-left: 150px;
+            
+           
+            
+
+        }
+        div.titulo{
+            margin-bottom: 15px;
+            margin-left: 30px;
+        }
+        h1 {
+            font: normal 35pt sans-serif;
+            background-color: blueviolet;
+            width: 500px;
+            text-align: center;
+            
+        }
+        h3 {
+            font: normal 18pt sans-serif;
+            margin-left: 30px;
+        }
+        div#row1 {
+            background-color: black;
+            width: 500px;
+            height: 20px;
+            top: 160px;
+            position: absolute;
+        }
+        div#row2 {
+            background-color: black;
+            width: 500px;
+            height: 20px;
+            top: 320px;
+            position: absolute;
+        }
+        
+        div#frame1 {
+            width: 125px;
+            height: 125px;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 10px;
+            left: 0;
+            text-align: center;
+            
+
+        }
+        div#frame2 {
+            width: 125px;
+            height: 125px;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 10px;
+            left: 172px;
+            text-align: center;
+            
+
+        }
+        div#frame3 {
+            width: 125px;
+            height: 125px;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 10px;
+            left: 345px;
+            text-align: center;
+
+        }
+        div#frame4 {
+            width: 125px;
+            height: 125px;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 10px;
+            left: 0px;
+            top: 167px;
+            text-align: center;
+
+        }
+        div#frame5 {
+            width: 125px;
+            height: 125px;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 10px;
+            left: 172px;
+            top: 167px;
+            text-align: center;
+
+        }
+        div#frame6 {
+            width: 125px;
+            height: 125px;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 10px;
+            left: 345px;
+            top: 167px;
+            text-align: center;
+
+        }
+        div#frame7 {
+            width: 125px;
+            height: 125px;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 10px;
+            left: 0px;
+            top: 330px;
+            text-align: center;
+
+        }
+        div#frame8 {
+            width: 125px;
+            height: 125px;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 10px;
+            left: 172px;
+            top: 330px;
+            text-align: center;
+
+        }
+        div#frame9 {
+            width: 125px;
+            height: 125px;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 10px;
+            left: 345px;
+            top: 330px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <h1>JOGO DA VELHA!</h1>
+        <h3>- 1 click para X</h3>
+        <h3>- 2 clicks para O</h3>
+    </div>
+    <div id="mae">
+        <div id="col1"></div>
+        <div id="col2"></div>
+        <div id="row1"></div>
+        <div id="row2"></div>
+
+        <div id="framae">
+            <div id="frame1"></div>
+            <div id="frame2"></div>
+            <div id="frame3"></div>
+            <div id="frame4"></div>
+            <div id="frame5"></div>
+            <div id="frame6"></div>
+            <div id="frame7"></div>
+            <div id="frame8"></div>
+            <div id="frame9"></div>
+        </div>
+    </div>  
+    
+
+    <button id="limpar">LIMPAR</button>  
+
+
+
+    <script>
+        var a = window.document.getElementById("frame1")
+        var b = window.document.getElementById("frame2")
+        var c = window.document.getElementById("frame3")
+        var d = window.document.getElementById("frame4")
+        var e = window.document.getElementById("frame5")
+        var f = window.document.getElementById("frame6")
+        var g = window.document.getElementById("frame7")
+        var h = window.document.getElementById("frame8")
+        var i = window.document.getElementById("frame9")
+        var botao = window.document.getElementById("limpar")    
+
+       
+        a.addEventListener('click', clicar1)
+        b.addEventListener('click', clicar2)
+        c.addEventListener('click', clicar3)
+        d.addEventListener('click', clicar4)
+        e.addEventListener('click', clicar5)
+        f.addEventListener('click', clicar6)
+        g.addEventListener('click', clicar7)
+        h.addEventListener('click', clicar8)
+        i.addEventListener('click', clicar9)
+        a.addEventListener('dblclick', dblclick1)
+        b.addEventListener('dblclick', dblclick2)
+        c.addEventListener('dblclick', dblclick3)
+        d.addEventListener('dblclick', dblclick4)
+        e.addEventListener('dblclick', dblclick5)
+        f.addEventListener('dblclick', dblclick6)
+        g.addEventListener('dblclick', dblclick7)
+        h.addEventListener('dblclick', dblclick8)
+        i.addEventListener('dblclick', dblclick9)
+       
+        
+        botao.addEventListener('click', limpar)
+
+        function limpar(){
+                a.innerText =""
+                b.innerText =""
+                c.innerText =""
+                d.innerText =""
+                e.innerText =""
+                f.innerText =""
+                g.innerText =""
+                h.innerText =""
+                i.innerText =""
+
+            
+           
+        }
+        function clicar1() {
+            a.innerText ="X"
+            a.style.fontSize = "100pt"
+            a.style.color = "Black"
+            a.style.transition= "1s"
+            }
+
+        function clicar2() {
+            b.innerText ="X"
+            b.style.fontSize = "100pt"
+            b.style.color = "Black"
+            b.style.transition= "1s"
+            }
+        function clicar3() {
+            c.innerText ="X"
+            c.style.fontSize = "100pt"
+            c.style.color = "Black"
+            c.style.transition= "1s"
+            }
+        function clicar4() {
+            d.innerText ="X"
+            d.style.fontSize = "100pt"
+            d.style.color = "Black"
+            d.style.transition= "1s"
+            }
+        function clicar5() {
+            e.innerText ="X"
+            e.style.fontSize = "100pt"
+            e.style.color = "Black"
+            e.style.transition= "1s"
+        }
+        function clicar6() {
+            f.innerText ="X"
+            f.style.fontSize = "100pt"
+            f.style.color = "Black"
+            f.style.transition= "1s"
+        }
+        function clicar7() {
+            g.innerText ="X"
+            g.style.fontSize = "100pt"
+            g.style.color = "Black"
+            g.style.transition= "1s"
+        }
+        function clicar8() {
+            h.innerText ="X"
+            h.style.fontSize = "100pt"
+            h.style.color = "Black"
+            h.style.transition= "1s"
+            }
+        function clicar9() {
+            i.innerText ="X"
+            i.style.fontSize = "100pt"
+            i.style.color = "Black"
+            i.style.transition= "1s"
+            }
+        function dblclick1() {
+            a.innerText = "O"
+            a.style.fontSize = "100pt"
+            a.style.color = "Purple"
+            a.style.transition= "1s"
+        }
+        function dblclick2() {
+            b.innerText = "O"
+            b.style.fontSize = "100pt"
+            b.style.color = "Purple"
+            b.style.transition= "1s"
+        }
+        function dblclick3() {
+            c.innerText = "O"
+            c.style.fontSize = "100pt"
+            c.style.color = "Purple"
+            c.style.transition= "1s"
+        }
+        function dblclick4() {
+            d.innerText = "O"
+            d.style.fontSize = "100pt"
+            d.style.color = "Purple"
+            d.style.transition= "1s"
+        }
+        function dblclick5() {
+            e.innerText = "O"
+            e.style.fontSize = "100pt"
+            e.style.color = "Purple"
+            e.style.transition= "1s"
+        }
+        function dblclick6() {
+            f.innerText = "O"
+            f.style.fontSize = "100pt"
+            f.style.color = "Purple"
+            f.style.transition= "1s"
+        }
+        function dblclick7() {
+            g.innerText = "O"
+            g.style.fontSize = "100pt"
+            g.style.color = "Purple"
+            g.style.transition= "1s"
+        }
+        function dblclick8() {
+            h.innerText = "O"
+            h.style.fontSize = "100pt"
+            h.style.color = "Purple"
+            h.style.transition= "1s"
+        }
+        function dblclick9() {
+            i.innerText = "O"
+            i.style.fontSize = "100pt"
+            i.style.color = "Purple"
+            i.style.transition= "1s"
+        }
+
+
+
+        function remover() {
+            a.innerText = ""
+            
+        }
+       
+    </script>
+</body>
+</html>
